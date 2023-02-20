@@ -1,15 +1,19 @@
 html
   head
-    title MoL Pizza Store
+    title University Student Directory - VM1
   body
-    h1 Month of Pizza Lunches
-    p Welcome to our basic pizza store, now powered by Azure Cosmos DB! Here are some of the yummy pizzas you can soon order online!
+    h1 University Student Directory - VM1
+    p Welcome to Student Directory, now powered by Azure Cosmos DB!
     
     table
       tr
-        th Name
-        th Cost
+        th Student Id
+        th First Name
+        th Last Name
+        th Course Enrolled
       each pizza in pizzas
         tr
-          td #{pizza.description}
-          td #{pizza.cost}
+          td #{pizza.studentId}
+          td #{pizza.firstName}
+          td #{pizza.lastName}
+          td #{pizza.courses}

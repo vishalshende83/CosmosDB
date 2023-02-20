@@ -40,7 +40,7 @@ async function findPizzas() {
     const { resources } = await client
         .database(databaseId)
         .container(containerId)
-        .items.query('SELECT c.description,c.cost FROM c')
+        .items.query('SELECT c.studentId,c.firstName,c.lastName,c.courses FROM c')
         .fetchAll()
 
     return resources
