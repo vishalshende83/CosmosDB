@@ -1,19 +1,15 @@
 html
   head
-    title University Student Directory - VM1
+    title Pizza Store - VM1
   body
-    h1 University Student Directory - VM1
-    p Welcome to Student Directory, now powered by Azure Cosmos DB!
+    h1 Pizza Store - VM1
+    p Welcome to our basic pizza store, now powered by Azure Cosmos DB!
     
     table
       tr
-        th Student Id
-        th First Name
-        th Last Name
-        th Course Enrolled
+        th Name
+        th Cost
       each pizza in pizzas
         tr
-          td #{pizza.studentId}
-          td #{pizza.firstName}
-          td #{pizza.lastName}
-          td #{pizza.courses}
+          td #{pizza.description}
+          td #{pizza.cost}
